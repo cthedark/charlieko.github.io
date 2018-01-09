@@ -27,3 +27,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'jekyll-bootstrap-sass'
 gem 'jekyll-font-awesome-sass'
+gem "github-pages", group: :jekyll_plugins

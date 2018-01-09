@@ -1,0 +1,18 @@
+// Colors
+$dark: #363f49;
+$darker: #2b323a;
+$lime: #32cd32;
+$lime-dark: #2db82d;
+
+// Text styles
+$press-start-2p-font: 'Press Start 2P', Helvetica;
+$roboto-condensed-font: 'Roboto Condensed', sans-serif;
+
+// Dimensions
+$border-radius-sm: 4px;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}

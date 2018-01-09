@@ -1,0 +1,43 @@
+body {
+  background-color: $dark;
+  color: $lime-dark;
+  font-family: $roboto-condensed-font;
+  font-size: 18px;
+  position: relative;
+}
+
+h1, h2, h3, h4 {
+  font-family: $press-start-2p-font;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: $lime;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: $lime;
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+
+// FOOTER
+footer {
+  background-color: $darker;
+  padding: 20px;
+
+  .copyright {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}

@@ -1,8 +1,8 @@
 body {
-  background-color: $dark;
+  background-color: $darker;
   color: $lime-dark;
   font-family: $roboto-condensed-font;
-  font-size: 18px;
+  font-size: 19px;
   position: relative;
 }
 
@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  color: $lime;
+  color: #777;
   text-decoration: underline;
 }
 

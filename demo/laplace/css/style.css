@@ -1,0 +1,68 @@
+/* Global Style */
+
+body {
+    color: #303030;
+}
+
+.red {color: #B71427;}
+.yellow {color: #FFE658;}
+.sky {color: #6DBDD6;}
+
+.container {
+    margin-top: 10px;
+}
+
+/* Input Interface */
+
+.tool {
+  margin-bottom: 20px;
+}
+
+.tool .params form .boundary label {
+  display: inline-block;
+  width: 60px;
+}
+
+.tool .params form input[type=text] {
+  width: 60px;
+}
+
+.tool .params form input.array_param1 {
+  width: 400px;
+}
+
+/* Output Interface*/
+
+.number-output-container {
+    background-color: #303030;
+    margin-top: 10px;
+}
+
+.number-output-container span {
+    display: inline-block;
+    margin: 0 10px;
+    width: 30px;
+/*    text-shadow: 1px 1px 1px #FFFFFF;*/
+}
+
+canvas, .info {
+  margin: 10px;
+}
+
+.info .num-interation {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.post-solve-options {
+  margin: 0 0 0 10px;
+}
+
+textarea.raw-output {
+  width: 100%;
+  height: 400px;
+}
+
+#color-coded-canvas {
+  display: none;
+}

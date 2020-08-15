@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/demo.css"/>
+</head>
+<body>
+  <div id="rbm-demo" class="container">
+    <h3>RBM demo</h3>
+    <p>Use the form below to define the visible layer dimension. After the visible layer representation is rendered, click on squares representing each of the units to turn them on/off. Use this representation as input for either training or reconstruction.</p>
+    <div class="form-container">
+
+      <form class="form-inline">
+        <div class="col-2 form-group">
+          <input type="number" class="form-control" placeholder="Rows" id="v-rows">
+        </div>
+        <div class="col-2 form-group">
+          <input type="number" class="form-control" placeholder="Columns" id="v-columns">
+        </div>
+        <button type="button" class="btn btn-primary" onClick="demo.init();">Initiate</button>
+      </form>
+
+      <div id="input" class="container">
+        <canvas id="canvas-input"></canvas>
+        <button type="button" class="btn btn-primary margin-bottom" onClick="demo.reconstruct()">Reconstruct</button>
+        <button type="button" class="btn btn-primary margin-bottom" onClick="demo.train()">Train</button>
+      </div>
+
+      <div id="output" class="container">
+        <p id="output-message"></p>
+        <canvas id="canvas-output"></canvas>
+      </div>
+
+    </div>
+    
+
+    <div id="reconstructed">
+    </div>
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.9.3/lodash.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/math.js?1"></script>
+  <script src="js/RBM.js?1"></script>
+  <script src="js/demo.js?1"></script>
+  <script>
+  $(function(){
+    $('#input').hide();
+  })
+  </script>
+</body>
+</html>
